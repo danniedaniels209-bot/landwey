@@ -128,22 +128,22 @@ export default function Hero({ onIntroComplete, revealed }: HeroProps) {
           then fades/slides up in a short stagger (headline → subhead → CTA). */}
       <div
         ref={revealRef}
-        className="absolute left-[6%] top-[24%] z-20 flex max-w-xl flex-col items-start gap-6 md:left-[8%] md:top-[26%]"
+        className="absolute left-[6%] right-6 top-[20%] z-20 flex max-w-xl flex-col items-start gap-5 sm:right-auto sm:top-[24%] sm:gap-6 md:left-[8%] md:top-[26%]"
       >
         <h1
-          className="invisible text-[56px] font-medium leading-[0.95] tracking-tight text-forest md:text-[76px]"
+          className="invisible text-[38px] font-medium leading-[1] tracking-tight text-forest min-[420px]:text-[44px] sm:text-[56px] md:text-[68px] lg:text-[76px]"
           style={{ fontFamily: "var(--font-serif)" }}
         >
           Build Wealth
           <br />
           on Land
         </h1>
-        <p className="invisible text-base text-forest-dark/70 md:text-lg">
+        <p className="invisible text-sm text-forest-dark/70 sm:text-base md:text-lg">
           Master-planned communities across Lagos
         </p>
         <a
           href="#communities"
-          className="group invisible inline-flex items-center gap-2 rounded-md bg-forest px-6 py-3.5 text-sm font-medium text-warm-white transition-colors hover:bg-forest-light md:text-base"
+          className="group invisible inline-flex items-center gap-2 rounded-md bg-forest px-5 py-3 text-sm font-medium text-warm-white transition-colors hover:bg-forest-light sm:px-6 sm:py-3.5 md:text-base"
         >
           Explore Communities
           <span aria-hidden className="transition-transform group-hover:translate-x-0.5">
