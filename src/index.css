@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  /* Deep forest green, sampled from the LandWey reference (logo / buttons) */
+  --color-forest: #0e2a1f;
+  --color-forest-dark: #081a12;
+  --color-forest-light: #143a2b;
+
+  /* Warm neutrals */
+  --color-cream: #f7f4ec;
+  --color-warm-white: #faf8f2;
+
+  /* Editorial serif for logo / headings */
+  --font-serif: "Fraunces", "Georgia", "Times New Roman", serif;
+  /* Nav / body sans */
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  /* Hero display type — brief specifies Neue Montreal Light, falling back to
+     Helvetica Neue Light. Neue Montreal is a paid font and is NOT bundled here;
+     if you own a license, drop the woff2 files in /public/fonts and register
+     an @font-face named "Neue Montreal" above this block — the stack below
+     will then pick it up automatically with zero other changes. */
+  --font-hero: "Neue Montreal", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  background: var(--color-cream);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-forest-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cinematic hero word (FROM LAND / TO LEGACY) */
+.hero-word {
+  font-family: var(--font-hero);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.94;
+  font-size: clamp(48px, 8vw, 140px);
+  color: #faf8f2;
+  white-space: nowrap;
+  will-change: transform, opacity;
+}
