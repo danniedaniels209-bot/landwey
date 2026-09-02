@@ -1,8 +1,7 @@
 services:
   - type: web
     name: landwey
-    runtime: static
-    plan: free
+    env: static
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
     pullRequestPreviewsEnabled: false
