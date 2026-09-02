@@ -3,7 +3,7 @@ services:
     name: landwey
     env: static
     buildCommand: npm ci && npm run build
-    staticPublishPath: ./dist
+    staticPublishPath: dist
     pullRequestPreviewsEnabled: false
     routes:
       # SPA fallback — client-side routing (if added later) still resolves to index.html
